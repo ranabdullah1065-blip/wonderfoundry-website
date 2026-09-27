@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WonderFoundry — Where Curiosity Becomes Understanding</title>
+
+  <meta name="description" content="WonderFoundry creates cinematic stories about technology, science, engineering, inventions, history, machines, food, and the world around us.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 10, 0.9);
+      border-bottom: 1px solid #222;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 7% 80px;
+      background:
+        radial-gradient(circle at center, #202020 0%, #0a0a0a 55%);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 1;
+      margin-bottom: 25px;
+      letter-spacing: -3px;
+    }
+
+    .hero h1 span {
+      color: #aaa;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #bdbdbd;
+      font-size: 20px;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    section {
+      padding: 100px 7%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+      color: #aaa;
+      max-width: 750px;
+      font-size: 18px;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 45px;
+    }
+
+    .topic {
+      padding: 30px;
+      border: 1px solid #292929;
+      background: #111;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .topic:hover {
+      transform: translateY(-5px);
+      border-color: #555;
+    }
+
+    .topic h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .topic p {
+      color: #888;
+      font-size: 14px;
+    }
+
+    .cta {
+      text-align: center;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #999;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      border: 1px solid #555;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: white;
+      color: black;
+    }
+
+    footer {
+      padding: 50px 7%;
+      text-align: center;
+      border-top: 1px solid #222;
+      color: #777;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      section {
+        padding: 75px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">WonderFoundry</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Wonder<span>Foundry</span></h1>
+
+        <p>
+          Where curiosity becomes understanding.
+          Cinematic stories about the ideas, inventions,
+          machines, and discoveries that shape our world.
+        </p>
+
+        <div class="tagline">
+          Cinematic Stories · Curious Questions · Real Discoveries
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about">
+      <h2 class="section-title">Why WonderFoundry?</h2>
+
+      <p class="section-text">
+        The world is full of things we use, see, and experience every day
+        without understanding how they came to be.
+        WonderFoundry explores those stories — turning complicated ideas
+        into clear, engaging cinematic documentaries.
+      </p>
+    </section>
+
+
+    <section id="topics">
+      <h2 class="section-title">Explore</h2>
+
+      <p class="section-text">
+        From ancient inventions to modern engineering, every subject starts
+        with one simple question: how does this actually work?
+      </p>
+
+      <div class="topics">
+
+        <div class="topic">
+          <h3>Technology</h3>
+          <p>The technologies changing how humans live and work.</p>
+        </div>
+
+        <div class="topic">
+          <h3>Science</h3>
+          <p>The discoveries that help us understand our universe.</p>
+        </div>
+
+        <div class="topic">
+          <h3>Engineering</h3>
+          <p>The systems and structures built to solve impossible problems.</p>
+        </div>
+
+        <div class="topic">
+          <h3>History</h3>
+          <p>The events, people, and inventions that changed the world.</p>
+        </div>
+
+        <div class="topic">
+          <h3>Inventions</h3>
+          <p>Ordinary objects with extraordinary stories behind them.</p>
+        </div>
+
+        <div class="topic">
+          <h3>Machines</h3>
+          <p>The mechanisms and machines powering modern civilization.</p>
+        </div>
+
+        <div class="topic">
+          <h3>Everyday Life</h3>
+          <p>A closer look at the hidden systems behind everyday things.</p>
+        </div>
+
+        <div class="topic">
+          <h3>Food</h3>
+          <p>The science, history, and technology behind what we eat.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="cta" id="contact">
+      <h2>Forge Your Curiosity.</h2>
+
+      <p>
+        Have a question, idea, or story worth exploring?
+      </p>
+
+      <a class="button" href="mailto:contact@wonderfoundry.com">
+        Contact WonderFoundry
+      </a>
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>© 2026 WonderFoundry. All rights reserved.</p>
+
+    <br>
+
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="#contact">Contact</a>
+
+  </footer>
+
+</body>
+</html>
